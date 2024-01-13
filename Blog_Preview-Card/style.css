@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Figtree-Variable';
+    src: url('assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype'),
+        url('assets/fonts/OFL.txt') format('woff')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Figtree-Variable', sans-serif;
+    background-color: hsla(44, 88%, 63%);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 280px;
+    height: auto;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid #000;
+    border-radius: 20px;
+    box-shadow: 7px 7px #000;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    transition: ease 1s, transform 1s;
+}
+
+
+#container:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+#illustration {
+    border-radius: 10px;
+}
+
+#learn {
+    font-size: 14px;
+    font-weight: 600;
+    background-color: hsla(44, 88%, 63%);
+    width: 25%;
+    padding: 7px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#publishinfo {
+    color: hsl(0, 0%, 7%);
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#title {
+    font-size: 20px;
+    margin: 15px 0;
+    font-weight: 800;
+}
+
+#title:hover {
+    color: hsla(44, 88%, 63%);
+}
+
+#description {
+    color: hsl(0, 0%, 50%);
+    margin-bottom: 15px;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+#author {
+    font-size: 14px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+#author-img {
+    height: 30px;
+    padding-right: 10px;
+}
+
+#author span {
+    font-weight: 600;
+}
