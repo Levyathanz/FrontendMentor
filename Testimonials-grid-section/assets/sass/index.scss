@@ -81,6 +81,7 @@ body {
 
 .grid-2 {
     background-color: $grayish_blue;
+    width: 10rem;
 
     h1,
     h3 {
@@ -96,7 +97,9 @@ body {
     background-color: $White;
     grid-column: 4/4;
     grid-row: 1/3;
+    width: 13rem;
 
+    h1,
     p {
         color: $black70;
     }
@@ -104,7 +107,9 @@ body {
 
 .grid-4 {
     background-color: $White;
+    width: 13rem;
 
+    h1,
     p {
         color: $black70;
     }
