@@ -1,0 +1,138 @@
+// colors
+@import 'variables';
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+
+//font-family: 'Barlow Semi Condensed',san-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 3rem 6rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: $White;
+}
+
+#testimonal-grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    row-gap: 20px;
+    column-gap: 20px;
+    transition: ease-in-out 2s, transform 2s;
+
+    #author {
+        display: flex;
+
+        img {
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        h3,
+        p {
+            padding-left: 15px;
+        }
+
+        h3 {
+            font-size: 13px;
+            font-weight: 600;
+        }
+    }
+
+    :hover {
+        transform: scale(1.02);
+    }
+
+}
+
+
+.testimonal {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 5px 5px 10px 2px $Lightgray;
+
+    h1 {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 10px 0px;
+    }
+}
+
+.grid-1 {
+    background-color: $violet;
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right 6rem top;
+    grid-column: 1/3;
+
+    h1,
+    h3 {
+        color: $White;
+    }
+
+    p {
+        color: $White70;
+    }
+}
+
+.grid-2 {
+    background-color: $grayish_blue;
+
+    h1,
+    h3 {
+        color: $White;
+    }
+
+    p {
+        color: $White70;
+    }
+}
+
+.grid-3 {
+    background-color: $White;
+    grid-column: 4/4;
+    grid-row: 1/3;
+
+    p {
+        color: $black70;
+    }
+}
+
+.grid-4 {
+    background-color: $White;
+
+    p {
+        color: $black70;
+    }
+}
+
+.grid-5 {
+    background-color: $blackish_blue;
+    grid-column: 2/4;
+
+    h1,
+    h3 {
+        color: $White;
+    }
+
+    p {
+        color: $White70;
+    }
+}
+
+@media (max-width:1150px) {
+    #testimonal-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
