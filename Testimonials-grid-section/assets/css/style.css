@@ -17,7 +17,6 @@ body {
   grid-template-columns: repeat(4, auto);
   row-gap: 20px;
   column-gap: 20px;
-  transition: ease-in-out 2s, transform 2s;
 }
 #testimonal-grid #author {
   display: flex;
@@ -34,9 +33,6 @@ body {
   font-size: 13px;
   font-weight: 600;
 }
-#testimonal-grid :hover {
-  transform: scale(1.02);
-}
 
 .testimonal {
   display: flex;
@@ -45,6 +41,8 @@ body {
   border-radius: 10px;
   padding: 2rem;
   box-shadow: 5px 5px 10px 2px hsl(0, 0%, 81%);
+  transition: ease 2s;
+  cursor: pointer;
 }
 .testimonal h1 {
   font-size: 20px;
