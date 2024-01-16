@@ -5,11 +5,15 @@
 }
 
 body {
-  margin: 3rem 6rem;
+  height: 100vh;
+  margin: 0 7rem;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 13px;
   font-weight: 500;
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #testimonal-grid {
@@ -67,7 +71,7 @@ body {
 
 .grid-2 {
   background-color: hsl(217, 19%, 35%);
-  width: 10rem;
+  width: 13rem;
 }
 .grid-2 h1,
 .grid-2 h2 {
@@ -118,6 +122,11 @@ body {
   }
   #testimonal-grid .testimonal {
     width: auto;
+  }
+}
+@media (max-width: 650px) {
+  body {
+    margin: 3rem;
   }
 }
 

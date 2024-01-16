@@ -11,11 +11,15 @@
 }
 
 body {
-    margin: 3rem 6rem;
+    height: 100vh;
+    margin: 0 7rem;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 13px;
     font-weight: 500;
-    background-color: $White;
+    background-color: $light_grayish_blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #testimonal-grid {
@@ -81,7 +85,7 @@ body {
 
 .grid-2 {
     background-color: $grayish_blue;
-    width: 10rem;
+    width: 13rem;
 
     h1,
     h2 {
@@ -139,5 +143,11 @@ body {
         .testimonal {
             width: auto;
         }
+    }
+}
+
+@media (max-width:650px) {
+    body {
+        margin: 3rem;
     }
 }
