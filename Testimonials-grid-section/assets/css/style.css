@@ -132,7 +132,7 @@ main {
 
 @media (max-width: 1150px) {
   body {
-    margin: 3rem 3rem;
+    margin: 3rem 5rem;
   }
 
   main {
@@ -147,13 +147,13 @@ main {
   }
 
   #testimonal-grid .testimonal {
-    width: auto;
+    width: 100%;
   }
 }
 
 @media (max-width: 650px) {
   body {
-    margin: 3rem;
+    margin: 4rem;
   }
 }
 
