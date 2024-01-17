@@ -22,7 +22,7 @@ main {
 }
 
 #container {
-    width: 280px;
+    width: 240px;
     height: auto;
     padding: 20px;
     background-color: hsl(0, 0%, 100%);
@@ -45,11 +45,12 @@ main {
 
 
 #illustration {
+    width: 15rem;
     border-radius: 10px;
 }
 
 #learn {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     background-color: hsla(44, 88%, 63%);
     width: 25%;
@@ -67,7 +68,7 @@ main {
 }
 
 #title {
-    font-size: 20px;
+    font-size: 18px;
     margin: 15px 0;
     font-weight: 800;
 }
