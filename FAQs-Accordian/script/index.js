@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', function () {
             let display = answer.style.display;
 
             if (display == 'none' || display == ``) {
-                Icon.src = '/FAQ-Accordion/assets/images/icon-minus.svg';
+                Icon.src = './assets/images/icon-minus.svg';
                 answer.style.display = `block`;
             } else {
-                Icon.src = `/FAQ-Accordion/assets/images/icon-plus.svg`;
+                Icon.src = `./assets/images/icon-plus.svg`;
                 answer.style.display = `none`;
             }
         })

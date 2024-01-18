@@ -3,8 +3,8 @@
 // Importing Local Font.
 @font-face {
     font-family: 'Worksans-Variable';
-    src: url('/FAQ-Accordion/assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype'),
-        url('assets/fonts/OFL.txt') format('woff') // font-family: 'Worksans-Variable', sans-serif;
+    src: url('../assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype'),
+        url('../assets/fonts/OFL.txt') format('woff') // font-family: 'Worksans-Variable', sans-serif;
 }
 
 
@@ -22,7 +22,7 @@ $darkPurple: hsl(292, 42%, 14%);
 
 body {
     font-family: 'Worksans-Variable', sans-serif;
-    background-image: url('/FAQ-Accordion/assets/images/background-pattern-desktop.svg');
+    background-image: url('../assets/images/background-pattern-desktop.svg');
     background-repeat: no-repeat;
     background-position: center top -4rem;
     display: flex;
@@ -115,7 +115,7 @@ body {
 
 @media (max-width:380px) {
     body {
-        background-image: url(/FAQ-Accordion/assets/images/background-pattern-mobile.svg);
+        background-image: url(../assets/images/background-pattern-mobile.svg);
         background-repeat: no-repeat;
     }
 }
