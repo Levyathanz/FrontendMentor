@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Worksans-Variable";
+  src: url("/FAQ-Accordion/assets/fonts/WorkSans-VariableFont_wght.ttf") format("truetype"), url("assets/fonts/OFL.txt") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Worksans-Variable", sans-serif;
+  background-image: url("/FAQ-Accordion/assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center top -4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  right: 0;
+}
+
+#container {
+  background-color: hsl(0, 0%, 100%);
+  width: 29rem;
+  margin: 30px;
+  padding: 30px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px 5px rgba(119, 108, 108, 0.2549019608);
+}
+
+#container-title {
+  display: flex;
+  margin: 10px 0;
+}
+#container-title img {
+  width: 1.7rem;
+}
+#container-title h1 {
+  margin-left: 1.5rem;
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(292, 42%, 14%);
+}
+
+#container-questions {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+#container-questions .question-section {
+  padding: 10px;
+}
+#container-questions .question {
+  color: hsl(292, 42%, 14%);
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#container-questions .question p {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#container-questions .question p:hover {
+  color: #8e3fba;
+}
+#container-questions .question img {
+  width: 1.2rem;
+  cursor: pointer;
+}
+#container-questions .answer {
+  display: none;
+  padding: 10px 20px;
+  color: hsla(291, 8%, 45%, 0.89);
+  text-indent: 30px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (max-width: 550px) {
+  #container {
+    width: auto;
+    padding: 30px;
+  }
+}
+@media (max-width: 380px) {
+  body {
+    background-image: url(/FAQ-Accordion/assets/images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
