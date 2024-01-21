@@ -136,10 +136,10 @@ main {
     }
 }
 
-@media (max-width:1150px) {
+@media (max-width:1200px) {
     main {
         height: auto;
-        margin: 0 3rem;
+        margin: 4rem 0rem;
     }
 
     #testimonal-grid {
@@ -149,13 +149,17 @@ main {
         justify-content: center;
 
         .testimonal {
-            width: auto;
+            width: 100%;
         }
     }
 }
 
 @media (max-width:650px) {
     body {
+        margin: 3rem;
+    }
+
+    main {
         margin: 3rem;
     }
 }

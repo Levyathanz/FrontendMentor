@@ -116,10 +116,10 @@ main {
   color: hsla(0, 0%, 100%, 0.7);
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
   main {
     height: auto;
-    margin: 0 3rem;
+    margin: 4rem 0rem;
   }
   #testimonal-grid {
     display: flex;
@@ -128,11 +128,14 @@ main {
     justify-content: center;
   }
   #testimonal-grid .testimonal {
-    width: auto;
+    width: 100%;
   }
 }
 @media (max-width: 650px) {
   body {
+    margin: 3rem;
+  }
+  main {
     margin: 3rem;
   }
 }
