@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    margin: 5rem;
+    font-family: 'League Spartan', sans-serif;
+    background-image: url('../public/images/bg-pattern-top-desktop.svg'), url('../public/images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -30rem top, right bottom;
+    background-size: contain, contain;
+}
+
+.section-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.user-report{
+    width: 30%;
+    padding: 2rem 0rem;
+}
+.user-report h1{
+    color: var(--Dark-Magenta);
+    font-size: 3rem;
+}
+.user-report p{
+    padding: 2rem 0;
+    color: var(--Dark-Grayish-Magenta);
+}
+
+.ratings{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.rating-box{
+    color: var(--Dark-Magenta);
+    font-size: 15px;
+    font-weight: 500;
+    width: 300px;
+    background-color: var(--Light-Grayish-Magenta);
+    margin: 1rem;
+    padding: .7rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.rating-1{
+    position: absolute;
+    top:-5rem;
+    left:-6rem;
+}
+.rating-2{
+    position: absolute;
+    top:-1rem;
+    left:-3rem;
+}
+.rating-3{
+    position: absolute;
+    top:3rem;
+    left:0rem;
+}
+.section-2{
+    margin: 2rem 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+    position: relative;  
+}
+
+.review-card{
+    padding: 2rem;
+    background-color: var(--Dark-Magenta);
+    border-radius: 5px;
+}
+.user-profile{
+    padding: .9rem 0;
+    display: flex;
+}
+.user-profile img{
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+}
+
+.user-profile h2{
+    padding:0 1rem;
+    color: var(--White);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.user-profile h3{
+    padding:.5rem 1rem;
+    color: var(--Soft-Pink);
+    font-size: .8rem;
+}
+.review-card p{
+    color: var(--White);
+    font-size: .9rem;
+    line-height: 1rem;
+}
+
+.review1{
+    width: 30%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.review2{
+    width: 30%;
+    position: absolute;
+    top:15px;
+    left:360px
+}
+.review3{
+    width: 30%;
+    position: absolute;
+    top: 30px;
+    left: 720px;
+    right: 0;
+}
+
+@media(max-width:1180px) {
+    .section-2{
+        margin:3rem 0;
+        position: static;
+        flex-direction: column;
+    }
+    .review1,.review2,.review3{
+        width: 100%;
+        position: static;
+        margin:2rem 0;
+    }
+}
+
+@media screen and (max-width:900px) {
+    body{
+        margin:5rem 3rem;
+        background-image: url('../public/images/bg-pattern-top-desktop.svg'), url('../public/images/bg-pattern-bottom-mobile.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position: center top, center bottom;
+        background-size: contain, contain;
+    }
+    .section-1{
+        flex-direction: column;
+    }
+    .user-report{
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+    .ratings,.rating-1,.rating-2,.rating-3{
+        position: static;
+        align-items: center;
+        justify-content: center;
+    }
+}
