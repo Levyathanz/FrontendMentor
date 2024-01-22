@@ -15,11 +15,11 @@
 }
 
 body {
-    margin: 5rem;
+    margin:3rem 5rem;
     font-family: 'League Spartan', sans-serif;
     background-image: url('../public/images/bg-pattern-top-desktop.svg'), url('../public/images/bg-pattern-bottom-desktop.svg');
     background-repeat: no-repeat, no-repeat;
-    background-position: left -30rem top, right bottom;
+    background-position: left -10rem top, right bottom;
     background-size: contain, contain;
 }
 
@@ -34,15 +34,19 @@ body {
     padding: 2rem 0rem;
 }
 .user-report h1{
+    font-weight: 700;
     color: var(--Dark-Magenta);
     font-size: 3rem;
 }
 .user-report p{
+    font-weight: 600;
+    line-height: 1.3rem;
     padding: 2rem 0;
     color: var(--Dark-Grayish-Magenta);
 }
 
 .ratings{
+    font-weight: 600;
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -53,15 +57,19 @@ body {
 .rating-box{
     color: var(--Dark-Magenta);
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
     width: 300px;
     background-color: var(--Light-Grayish-Magenta);
     margin: 1rem;
     padding: .7rem 1rem;
     border-radius: 5px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
+}
+
+.stars{
+    width: .8rem;
 }
 .rating-1{
     position: absolute;
@@ -79,7 +87,7 @@ body {
     left:0rem;
 }
 .section-2{
-    margin: 2rem 6rem;
+    margin: .5rem 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,7 +124,8 @@ body {
 .review-card p{
     color: var(--White);
     font-size: .9rem;
-    line-height: 1rem;
+    font-weight: 600;
+    line-height: 1.2rem;
 }
 
 .review1{
@@ -168,9 +177,17 @@ body {
         width: 100%;
         text-align: center;
     }
-    .ratings,.rating-1,.rating-2,.rating-3{
+    .ratings{
+        width: 100%;
         position: static;
         align-items: center;
         justify-content: center;
     }
+    .rating-1,.rating-2,.rating-3{
+        position: static;
+    }
+    .review1,.review2,.review3{
+        width: 100%;
+    }
+
 }

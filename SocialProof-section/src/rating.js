@@ -1,4 +1,4 @@
-const star = <img src="./images/icon-star.svg" alt="star" />;
+const star = <img src="./images/icon-star.svg" alt="star"  className="stars" />;
 
 const Rating=()=>{
     return (
