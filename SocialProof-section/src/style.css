@@ -87,7 +87,7 @@ body {
     left:0rem;
 }
 .section-2{
-    margin: .5rem 6rem;
+    margin: 0rem 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,7 +125,7 @@ body {
     color: var(--White);
     font-size: .9rem;
     font-weight: 600;
-    line-height: 1.2rem;
+    line-height: 1rem;
 }
 
 .review1{
@@ -137,14 +137,14 @@ body {
 .review2{
     width: 30%;
     position: absolute;
-    top:15px;
-    left:360px
+    top:25px;
+    left:350px
 }
 .review3{
     width: 30%;
     position: absolute;
-    top: 30px;
-    left: 720px;
+    top: 35px;
+    left: 700px;
     right: 0;
 }
 
