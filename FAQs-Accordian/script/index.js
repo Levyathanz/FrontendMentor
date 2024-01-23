@@ -1,24 +1,23 @@
-// onpage load each question is taken as question var to display the answer for user clicks.
 document.addEventListener('DOMContentLoaded', function () {
-    const question = document.querySelectorAll('.question');
+    const questions = document.querySelectorAll('.question');
 
-    question.forEach((question, i) => {
+    questions.forEach((question, i) => {
         question.addEventListener('click', () => {
 
-            // Taking answer & Icon from the closest question section (i.e) from own div.
-            const answer = question.closest('.question-section').querySelector('.answer');
+            // Use querySelector directly
+            const accordianItem = question.closest('.question-section');
+            const answer = accordianItem.querySelector('.answer');
+            const Icon = accordianItem.querySelector('.icon');
 
-            const Icon = question.closest('.question-section').querySelector('.icon');
+            // Toggle the 'open' class
+            accordianItem.classList.toggle('open');
 
-            let display = answer.style.display;
-
-            if (display == 'none' || display == ``) {
+            // Toggle the icon and answer visibility based on the presence of 'open' class
+            if (accordianItem.classList.contains('open')) {
                 Icon.src = './assets/images/icon-minus.svg';
-                answer.style.display = `block`;
             } else {
-                Icon.src = `./assets/images/icon-plus.svg`;
-                answer.style.display = `none`;
+                Icon.src = './assets/images/icon-plus.svg';
             }
         })
     })
-})
+});
