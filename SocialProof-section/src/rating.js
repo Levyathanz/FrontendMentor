@@ -10,8 +10,8 @@ const Rating=()=>{
     )
 }
 
-const Stars = (probs) => {
-    const {ratedby} =probs;
+const Stars = (props) => {
+    const {ratedby} =props;
   return (
     <>
     <span>

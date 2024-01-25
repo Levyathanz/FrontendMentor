@@ -8,8 +8,8 @@ const Reviews=()=>{
     }))
 }
 
-const Reviewcontent =(probs)=>{
-    const {img,name,status,review}=probs;
+const Reviewcontent =(props)=>{
+    const {img,name,status,review}=props;
     return (
         <article className="review-card">
             <div className="user-profile">
