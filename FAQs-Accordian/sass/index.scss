@@ -77,7 +77,7 @@ body {
           }
 
         &.open{
-            max-height: 150px;
+            max-height: 200px;
         }
     }
 
@@ -125,11 +125,41 @@ body {
         width: auto;
         padding: 30px;
     }
+
+    .container-questions{
+
+        .question-section{
+            max-height: 50px;
+    
+            &.open{
+                max-height: 250px;
+            }
+
+            .question{
+
+                p{
+                    font-size: 13px;
+                }
+            }
+
+            .answer{
+                font-size: 12.5px;
+            }
+        }
+    }
 }
 
 @media (max-width:380px) {
     body {
         background-image: url(../assets/images/background-pattern-mobile.svg);
         background-repeat: no-repeat;
+    }
+
+    .question-section{
+        max-height: 200px;
+
+        &.open{
+            max-width: 400px;
+        }
     }
 }

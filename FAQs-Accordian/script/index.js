@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Use querySelector directly
             const accordianItem = question.closest('.question-section');
-            const answer = accordianItem.querySelector('.answer');
             const Icon = accordianItem.querySelector('.icon');
 
             // Toggle the 'open' class
