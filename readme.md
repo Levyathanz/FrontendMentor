@@ -43,5 +43,5 @@ This repository is a collection of Frontendmentor Challenges solutions.
   <p align="center">
    <b><a href="https://social-section-frontendmentor.netlify.app/">Live</a> </b>
 
-   <p align="center">Do not run audit fix command</p>
+   <p align="center" color="red">"Do not run audit fix command"</p>
   </p>
