@@ -97,13 +97,13 @@ body {
 @media (max-width: 550px) {
   #container {
     width: auto;
-    padding: 30px;
+    padding: 20px;
   }
   .container-questions .question-section {
     max-height: 50px;
   }
   .container-questions .question-section.open {
-    max-height: 250px;
+    max-height: 280px;
   }
   .container-questions .question-section .question p {
     font-size: 13px;
@@ -116,12 +116,6 @@ body {
   body {
     background-image: url(../assets/images/background-pattern-mobile.svg);
     background-repeat: no-repeat;
-  }
-  .question-section {
-    max-height: 200px;
-  }
-  .question-section.open {
-    max-width: 400px;
   }
 }
 
