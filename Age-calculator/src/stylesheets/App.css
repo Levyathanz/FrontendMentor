@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'poppins';
+  src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype'),
+      url('../assets/fonts/OFL.txt') format('woff') 
+    /* font-family: 'poppins', sans-serif; */
+}
+@font-face {
+  font-family: 'poppins-italic';
+  src: url('../assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype'),
+      url('../assets/fonts/OFL.txt') format('woff') 
+    /* font-family: 'poppins-italic', sans-serif; */
+}
+
+/* Color Variables */
+
+:root{
+  --Purple: hsl(259, 100%, 65%);
+  --Light_red: hsl(0, 100%, 67%); 
+  --White: hsl(0, 0%, 100%);
+  --Off_white: hsl(0, 0%, 94%);
+  --Light_grey: hsl(0, 0%, 86%);
+  --Smokey_grey: hsl(0, 1%, 44%);
+  --Off_black: hsl(0, 0%, 8%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: var(--Off_white);
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  background-color: var(--White);
+  width: 500px;
+  padding: 3rem;
+  border-radius: 2rem 2rem 10rem 2rem;
+  box-shadow:2px 2px 10px --Light_grey;
+}
+
+.input-container{
+  display: flex;
+  align-items: center;
+  font-family: 'poppins', sans-serif;
+}
+
+.js-day,.js-month,.js-year{
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.fieldlabel{
+  text-transform: uppercase;
+  font-size: .65rem;
+  letter-spacing: 1px;
+  color:var(--Smokey_grey) ;
+  margin-bottom: .3rem;
+}
+
+.input-field{
+  padding: 10px;
+  color: var(--Off_black);
+  font-size: 1rem;
+  font-weight: 900;
+  width: 5rem;
+  height: 1.5rem;
+  border: 1.3px solid var(--Light_grey);
+  border-radius: .3rem;
+  outline: none;
+}
+
+.input-field::placeholder{
+  padding: 10px;
+  font-size: .8rem;
+  font-weight: 900;
+  color: var(--Smokey_grey);
+}
+
+.input-field:focus{
+  border: 1.3px solid var(--Purple);
+}
+
+.input-errstate,.input-errstate:focus {
+  border: 1.3px solid var(--Light_red);
+}
+
+.errorstate{
+  color: var(--Light_red);
+}
+
+
+.button-container{
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.button-container hr{
+  width:30rem;
+  height: 1.5px;
+  border: none;
+  outline: none;
+  background-color: var(--Light_grey);
+}
+
+.button-container button{
+  width: 4rem;
+  height: 3.5rem;
+  padding: 7px;
+  border: none;
+  outline: none;
+  background-color: var(--Purple);
+  border-radius: 50%;
+}
+.button-container img{
+  width: 1.5rem;
+}
+
+.result-container{
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.age-years,.age-months,.age-days{
+  margin-right: 1rem;
+  font-size: 4rem;
+  font-family:'poppins-italic', sans-serif;
+  color: var(--Purple);
+}
+
+.result-age{
+  font-family:'poppins-italic', sans-serif;
+  font-size: 4rem;
+}
+
+@media screen and (max-width:650px){
+
+  .container{
+    width: 250px;
+    height: auto;
+    padding: 2rem 1rem;
+    border-radius: 1rem 1rem 5rem;
+  }
+
+  .js-day,.js-month,.js-year{
+    margin: 0 .5rem;
+  }
+
+  .js-day label,.js-month label,.js-year label{
+    font-size: .6rem;
+  }
+
+  .js-day input,.js-month input,.js-year input{
+    width: 2.5rem;
+    height: 1.2rem;
+    font-size: .8rem;
+    font-weight: 900;
+  }
+
+  .js-day input::placeholder,.js-month input::placeholder,.js-year input::placeholder{
+    padding: 2px;
+    font-size: .6rem;
+    font-weight: 900;
+  }
+
+  .button-container{
+    position: relative;
+    width: 210px;
+    margin: 3rem 1rem;
+  }
+
+  .button-container button{
+    position:absolute;
+    width: 2.9rem;
+    height: 2.6rem;
+    right:40%;
+  }
+
+  .button-container img{
+    width: 1.2rem;
+  }
+  
+  .age-years,.age-months,.age-days{
+    margin-right: 1rem;
+    font-size: 2rem;
+  }
+  
+  .result-age{
+    font-size: 2.5rem;
+  }
+
+}
