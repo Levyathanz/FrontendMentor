@@ -1,8 +1,14 @@
 @font-face {
-  font-family: 'poppins';
+  font-family: 'poppins-regular';
+  src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype'),
+      url('../assets/fonts/OFL.txt') format('woff') 
+    /* font-family: 'poppins-regular', sans-serif; */
+}
+@font-face {
+  font-family: 'poppins-bold';
   src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype'),
       url('../assets/fonts/OFL.txt') format('woff') 
-    /* font-family: 'poppins', sans-serif; */
+    /* font-family: 'poppins-bold', sans-serif; */
 }
 @font-face {
   font-family: 'poppins-italic';
@@ -47,7 +53,7 @@ body{
 .input-container{
   display: flex;
   align-items: center;
-  font-family: 'poppins', sans-serif;
+  font-family: 'poppins-bold', sans-serif;
 }
 
 .js-day,.js-month,.js-year{
@@ -94,6 +100,15 @@ body{
 
 .errorstate{
   color: var(--Light_red);
+}
+
+.error-text{
+  margin: 5px 0;
+  color: var(--Light_red);
+  font-family: 'poppins-regular', sans-serif;
+  font-size: .7rem;
+  font-style: italic;
+  font-weight: 600;
 }
 
 
@@ -155,21 +170,25 @@ body{
     margin: 0 .5rem;
   }
 
-  .js-day label,.js-month label,.js-year label{
+  .fieldlabel{
     font-size: .6rem;
   }
 
-  .js-day input,.js-month input,.js-year input{
+  .input-field{
     width: 2.5rem;
     height: 1.2rem;
     font-size: .8rem;
     font-weight: 900;
   }
 
-  .js-day input::placeholder,.js-month input::placeholder,.js-year input::placeholder{
+  .input-field::placeholder{
     padding: 2px;
     font-size: .6rem;
     font-weight: 900;
+  }
+
+  .error-text{
+    font-size: .65rem;
   }
 
   .button-container{
@@ -191,11 +210,11 @@ body{
   
   .age-years,.age-months,.age-days{
     margin-right: 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   
   .result-age{
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
 }
