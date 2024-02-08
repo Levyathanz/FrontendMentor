@@ -1,143 +1,157 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import arrow from './assets/images/icon-arrow.svg';
+import DateInput from './DateInput';
 
 const UserInput = () => {
-  // State variables to manage input values, errors, and age
   const [day, setDay] = useState('');
   const [month, setMonth] = useState('');
   const [year, setYear] = useState('');
   const [inputError, setInputError] = useState(false);
-  const [errorMessage,seterrorMessage]=useState('');
+  const [errorMessage, setErrorMessage] = useState('');
   const [age, setAge] = useState({ years: '--', months: '--', days: '--' });
-  let Age_count;
+  const [ageInterval, setAgeInterval] = useState(null);
 
-  // Function to handle input changes
+  const setError = (error, message) => {
+    setInputError(error);
+    setErrorMessage(message);
+  };
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setInputError(false)
+    setInputError(false);
     setAge({ years: '--', months: '--', days: '--' });
-
-    // Validation and updating state based on input changes
 
     switch (name) {
       case 'day':
-          setDay(value);
-          break
+        setDay(value);
+        break;
       case 'month':
-          setMonth(value); 
-          break
+        setMonth(value);
+        break;
       case 'year':
-          setYear(value);
-          break
+        setYear(value);
+        break;
       default:
-          break
+        break;
     }
   };
 
-  // Function to calculate and display age
   const getuserInput = (e) => {
     e.preventDefault();
     const currentDate = new Date();
     const userDate = new Date(`${year}-${month}-${day}`);
-    
-    if( day==='' || month === '' || year===''){
-      setInputError(true);
-      seterrorMessage('This Field is Required')
-    }else if( day>31||day<1 || month>12||month<1 || year>9999||year<1000 ){
-      setInputError(true)
-      seterrorMessage('Enter Valid Input')
-    }else if(year<1900){
-      setInputError(true)
-      seterrorMessage('Enter year above 1800')
-    }else if(year>currentDate.getFullYear()|| userDate>currentDate){
-      seterrorMessage('Must be in the Past')
-      setInputError(true)
-    }else if(inputError===false){
-      seterrorMessage('')
+
+    if (day === '' || month === '' || year === '') {
+      setError(true, 'This Field is Required');
+    } else if (day > 31 || day < 1 || month > 12 || month < 1 || year > 9999 || year < 1000) {
+      setError(true, 'Enter Valid Input');
+    } else if (year < 1900) {
+      setError(true, 'Enter year above 1900');
+    } else if (userDate > currentDate) {
+      setError(true, 'Must be in the Past');
+    } else if (!inputError) {
+      setError(false, '');
       setAge({ years: '--', months: '--', days: '--' });
-      calculation();
+
+      // Clear the previous interval if it exists
+      if (ageInterval) {
+        clearInterval(ageInterval);
+      }
+
+      calculation(currentDate);
+    }
+  };
+
+  useEffect(() => {
+    // Cleanup the interval when the component unmounts or before setting up a new one
+    return () => {
+      if (ageInterval) {
+        clearInterval(ageInterval);
+      }
     };
+  }, [ageInterval]);
 
+  function calculation(currentDate) {
+    let ageYears = currentDate.getFullYear() - year;
+    let ageMonths = currentDate.getMonth() - month + 1;
+    let ageDays = currentDate.getDate() - day;
 
-    function calculation(){
-      let ageYears =  currentDate.getFullYear() - year;
-      let ageMonths = currentDate.getMonth() - month+1;
-      let ageDays =currentDate.getDate() - day;
+    if (ageDays < 0) {
+      ageMonths -= 1;
+      ageDays = currentDate.getDate();
+    }
 
-      if(ageDays<0){
-        ageMonths-=1;
-        ageDays = currentDate.getDate();
+    if (ageMonths < 0) {
+      ageMonths += 12;
+      ageYears -= 1;
+    }
+
+    let daycounter = 0;
+    let monthcounter = 0;
+    let yearcounter = 0;
+
+    const Age_count = setInterval(() => {
+      if (daycounter < ageDays) {
+        daycounter += 1;
+      }
+      if (monthcounter < ageMonths) {
+        monthcounter += 1;
+      }
+      if (yearcounter < ageYears) {
+        yearcounter += 1;
       }
 
-      if(ageMonths<0){
-        ageMonths+=12;
-        ageYears-=1;
-      }
-      let daycount=0;
-      let monthcount=0;
-      let yearcount=0;
+      setAge({
+        years: yearcounter,
+        months: monthcounter,
+        days: daycounter,
+      });
+    }, 30);
 
-      Age_count=setInterval(()=>{
-
-        if(daycount<ageDays){
-          daycount+=1
-        }
-        if(monthcount<ageMonths){
-          monthcount+=1
-        }
-        if(yearcount<ageYears){
-          yearcount+=1
-        }
-        
-          // Set the calculated age to state
-        setAge({
-          years: yearcount,
-          months: monthcount,
-          days: daycount,
-        })
-      },30);
-
-      setTimeout(()=>{
-        clearInterval(Age_count)
-      },3500);
-      }
-
+    setAgeInterval(Age_count);
   }
 
   return (
     <div className="container">
       <form>
         <section className='input-container'>
-          {/* Input fields for day, month, and year */}
-          {['day', 'month', 'year'].map((fieldName) => (
-            <div key={fieldName} className={`js-${fieldName} `}>
-              <label className={ `fieldlabel ${inputError ? 'errorstate' : ''}`}>{fieldName}</label>
-              <input
-                type="number"
-                className={`input-field ${inputError ? 'input-errstate' : ''}`}
-                placeholder={fieldName.toUpperCase()}
-                max={fieldName === 'day' ? 31 : 9999}
-                min={fieldName === 'day' ? 1 : 1000}
-                name={fieldName}
-                onChange={handleInputChange}
-              />
-              <p className={`error-text`}>{errorMessage}</p>
-            </div>
-          ))}
+          <DateInput 
+            label="Day" 
+            name="day" 
+            onChange={handleInputChange} 
+            max={31} 
+            min={1} 
+            error={inputError} 
+            errorMessage={errorMessage} />
+          <DateInput 
+            label="Month" 
+            name="month" 
+            onChange={handleInputChange} 
+            max={12} 
+            min={1} 
+            error={inputError} 
+            errorMessage={errorMessage} />
+          <DateInput 
+            label="Year" 
+            name="year" 
+            onChange={handleInputChange} 
+            max={9999} 
+            min={1000} 
+            error={inputError} 
+            errorMessage={errorMessage} />
         </section>
         <div className="button-container">
-          <hr></hr>
-          {/* Button to calculate age */}
+          <hr />
           <button type='submit' onClick={getuserInput}>
-            <img src={arrow} alt='Click' className="js-btn"/>
+            <img src={arrow} alt='Click' className="js-btn" />
           </button>
         </div>
       </form>
-
       <section>
-        {/* Display calculated age */}
         {Object.entries(age).map(([unit, value]) => (
-          <p key={unit} className='result-container'><span className={`age-${unit}`}>{value}</span> <span className='result-age'>{unit}</span></p>
+          <p key={unit} className='result-container'>
+            <span className={`age-${unit}`}>{value}</span> <span className='result-age'>{unit}</span>
+          </p>
         ))}
       </section>
     </div>
