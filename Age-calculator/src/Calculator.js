@@ -16,6 +16,7 @@ const UserInput = () => {
     setErrorMessage(message);
   };
 
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setInputError(false);
@@ -86,25 +87,25 @@ const UserInput = () => {
       ageYears -= 1;
     }
 
-    let daycounter = 0;
-    let monthcounter = 0;
-    let yearcounter = 0;
+    let daycount = 0;
+    let monthcount = 0;
+    let yearcount = 0;
 
     const Age_count = setInterval(() => {
-      if (daycounter < ageDays) {
-        daycounter += 1;
+      if (daycount < ageDays) {
+        daycount += 1;
       }
-      if (monthcounter < ageMonths) {
-        monthcounter += 1;
+      if (monthcount < ageMonths) {
+        monthcount += 1;
       }
-      if (yearcounter < ageYears) {
-        yearcounter += 1;
+      if (yearcount < ageYears) {
+        yearcount += 1;
       }
 
       setAge({
-        years: yearcounter,
-        months: monthcounter,
-        days: daycounter,
+        years: yearcount,
+        months: monthcount,
+        days: daycount,
       });
     }, 30);
 
