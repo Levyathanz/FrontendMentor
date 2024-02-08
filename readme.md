@@ -43,5 +43,12 @@ This repository is a collection of Frontendmentor Challenges solutions.
   <p align="center">
    <b><a href="https://social-section-frontendmentor.netlify.app/">Live</a> </b>
 
-   <p align="center">"Do not run audit fix command!"</p>
-  </p>
+<hr>
+  <br>
+
+<h2 align="center">Age_Calculator</h2>
+<div align="center">
+  <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/Age-calculator/Design/desktop-preview.jpg" width="50%" />
+</div> 
+  <p align="center">
+   <b><a href="https://agecalculator-frontendmentorchallenge.netlify.app/">Live</a></b>
