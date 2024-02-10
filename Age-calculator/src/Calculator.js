@@ -18,9 +18,9 @@ const UserInput = () => {
 
 
   const handleInputChange = (e) => {
+    setAge({ years: '--', months: '--', days: '--' });
     const { name, value } = e.target;
     setInputError(false);
-    setAge({ years: '--', months: '--', days: '--' });
 
     switch (name) {
       case 'day':
@@ -113,40 +113,40 @@ const UserInput = () => {
   }
 
   return (
-    <div className="container">
+    <main className="container">
       <form>
         <section className='input-container'>
           <DateInput 
-            label="Day" 
             name="day" 
+            placeholder="DD"
             onChange={handleInputChange} 
             max={31} 
             min={1} 
             error={inputError} 
             errorMessage={errorMessage} />
           <DateInput 
-            label="Month" 
             name="month" 
+            placeholder='MM'
             onChange={handleInputChange} 
             max={12} 
             min={1} 
             error={inputError} 
             errorMessage={errorMessage} />
           <DateInput 
-            label="Year" 
             name="year" 
+            placeholder='YYYY'
             onChange={handleInputChange} 
             max={9999} 
             min={1000} 
             error={inputError} 
             errorMessage={errorMessage} />
         </section>
-        <div className="button-container">
+        <section className="button-container">
           <hr />
           <button type='submit' onClick={getuserInput}>
             <img src={arrow} alt='Click' className="js-btn" />
           </button>
-        </div>
+        </section>
       </form>
       <section>
         {Object.entries(age).map(([unit, value]) => (
@@ -155,7 +155,7 @@ const UserInput = () => {
           </p>
         ))}
       </section>
-    </div>
+    </main>
   );
 };
 
