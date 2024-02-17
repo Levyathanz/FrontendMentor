@@ -155,7 +155,8 @@
     z-index: 2;
   }
   
-  .popup-container img{
+  .popup-container image{
+    content: url(../assets/images/icon-success.svg);
     margin-bottom: .5rem;
     width: 3rem;
   }
