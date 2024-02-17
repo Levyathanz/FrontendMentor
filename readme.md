@@ -4,61 +4,64 @@ This repository is a collection of Frontendmentor Challenges solutions.
 
 <br>
 <h2 align="center">BlogPreviewCard</h2>
-<div align="center">
-  <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/Blog_Preview-Card/assets/images/desktop-preview.jpg" width="50%" />
-</div> 
-  <p align="center">
-   <b><a href="https://blogcardfrontendmentor.netlify.app/">Live</a> </b>
-  </p>
+    <div align="center">
+       <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/Blog_Preview-Card/assets/images/desktop-preview.jpg" width="50%" />
+    </div> 
+    <p align="center">
+       <b><a href="https://blogcardfrontendmentor.netlify.app/">Live</a> </b>
+    </p>
 
-  <hr>
-  <br>
+<hr>
+<br>
 
 <h2 align="center">Testimonal_Grid_Section</h2>
-<div align="center">
-  <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/Testimonials-grid-section/assets/images/desktop-preview.jpg" width="50%" />
-</div> 
-  <p align="center">
-   <b><a href="https://testimonalgridfrontendmentor.netlify.app/">Live</a> </b>
-  </p>
+    <div align="center">
+       <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/Testimonials-grid-section/assets/images/desktop-preview.jpg" width="50%" />
+    </div> 
+    <p align="center">
+       <b><a href="https://testimonalgridfrontendmentor.netlify.app/">Live</a> </b>
+    </p>
 
-  <hr>
-  <br>
+<hr>
+<br>
 
 <h2 align="center">FAQs-Accordin</h2>
-<div align="center">
-  <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/FAQs-Accordian/assets/images/desktop-preview.jpg" width="50%" />
-</div> 
-  <p align="center">
-   <b><a href="https://faqs-accordin-frontendmentor.netlify.app/">Live</a> </b>
-  </p>
+    <div align="center">
+       <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/FAQs-Accordian/assets/images/desktop-preview.jpg" width="50%" />
+    </div> 
+    <p align="center">
+       <b><a href="https://faqs-accordin-frontendmentor.netlify.app/">Live</a> </b>
+    </p>
 
-  <hr>
-  <br>
+<hr>
+<br>
 
 <h2 align="center">Social-Proof-Section-Master</h2>
-<div align="center">
-  <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/SocialProof-section/preview-image/desktop-preview.jpg" width="50%" />
-</div> 
-  <p align="center">
-   <b><a href="https://social-section-frontendmentor.netlify.app/">Live</a> </b>
+    <div align="center">
+      <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/SocialProof-section/preview-image/desktop-preview.jpg" width="50%" />
+    </div> 
+    <p align="center">
+    <b><a href="https://social-section-frontendmentor.netlify.app/">Live</a></b>
+    </p>
 
 <hr>
-  <br>
+<br>
 
 <h2 align="center">Age_Calculator</h2>
-<div align="center">
-  <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/Age-calculator/Design/desktop-preview.jpg" width="50%" />
-</div> 
-  <p align="center">
-   <b><a href="https://agecalculator-frontendmentorchallenge.netlify.app/">Live</a></b>
+    <div align="center">
+       <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/Age-calculator/Design/desktop-preview.jpg" width="50%" />
+    </div> 
+    <p align="center">
+       <b><a href="https://agecalculator-frontendmentorchallenge.netlify.app/">Live</a></b>
+    </p>
 
 <hr>
-  <br>
+<br>
 
 <h2 align="center">NewsLetter-SignUp</h2>
-<div align="center">
-  <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/NewsLetter-SignUp/src/assets/images/desktop-preview.jpg" width="50%" />
-</div> 
-  <p align="center">
-   <b><a href="https://newsletter-signup-frontendmentor.netlify.app/">Live</a></b>
+    <div align="center">
+       <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/NewsLetter-SignUp/src/assets/images/desktop-preview.jpg" width="50%" />
+    </div> 
+    <p align="center">
+      <b><a href="https://newsletter-signup-frontendmentor.netlify.app/">Live</a></b>
+    </p>
