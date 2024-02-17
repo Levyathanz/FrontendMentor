@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../assets/fonts/Roboto-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Roboto-bold";
+    src: url("../assets/fonts/Roboto-Bold.ttf");
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root{
+    --Dark_Slate_Grey: hsl(234, 29%, 20%);
+    --Charcoal_Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --Tomato: hsl(4, 100%, 67%);
+  }
+  
+  main{
+    background-color: var(--Charcoal_Grey);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container{
+    background-color: var(--White);
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    width: 45rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .signup-form{
+    font-family: "Roboto-Regular",sans-serif;
+    padding: 2.5rem;
+    color: var(--Dark_Slate_Grey);
+  }
+  
+  .signup-form h1{
+    font-family: "Roboto-bold",sans-serif;
+    font-size: 3rem;
+    margin: 1.5rem 0;
+  }
+  .signup-form p{
+    font-size: .9rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .signup-form ul {
+    font-size: 14px;
+    margin: 1rem 0;
+  }
+  .signup-form li{
+    margin: 10px 0;
+    list-style-image: url(./assets/images/icon-list.svg);
+    list-style-position: inside; 
+  }
+  
+  .input-container{
+    margin: 2rem 0 0;
+    display: flex;
+    flex-direction: column;
+    cursor:pointer;
+  }
+  
+  .input-container label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .input-container label p{
+    font-family: "Roboto-bold",sans-serif;
+    font-size: .8rem;
+    margin-bottom: .5rem;
+  }
+  
+  .input-container input{
+    padding:.8rem;
+    border: 1px solid var(--Grey);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .input-container input:focus{
+    outline: none;
+    border:1px solid #061f3b;
+  }
+  
+  .signup-form input[type='submit']{
+    cursor:pointer;
+    width: 100%;
+    padding: .8rem;
+    border:none;
+    border-radius: 5px;
+    background-color: var(--Charcoal_Grey);
+    color: var(--White);
+    font-family: "Roboto-bold",sans-serif;
+    transition: ease 500ms,transform 500ms;
+  }
+  .signup-form input[type='submit']:hover{
+    background: linear-gradient(90deg, #e46944, transparent) var(--Tomato);
+  }
+  
+  .input-container label .error-text{
+    color: var(--Tomato);
+  }
+  input.input-errorstate{
+    color: var(--Tomato);
+    border: 1px solid var(--Tomato);
+    background-color: #e4b6b6;
+  }
+  input.input-errorstate:focus{
+    outline: none;
+    border: 1px solid var(--Tomato);
+  }
+  
+  figure{
+    content: url(../assets/images/illustration-sign-up-desktop.svg);
+    width: 20rem;
+  }
+  .popup-screen{
+    position: absolute;
+    top: -50rem;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Charcoal_Grey);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease 400ms, transform;
+  }
+
+  .popup-screen-active{
+    top: 0;
+  }
+  .popup-container{
+    color: var(--Dark_Slate_Grey);
+    font-family: "Roboto-bold",sans-serif;
+    background-color: var(--White);
+    border: none;
+    border-radius: 2rem;
+    width: 18rem;
+    padding: 2rem;
+    z-index: 2;
+  }
+  
+  .popup-container img{
+    margin-bottom: .5rem;
+    width: 3rem;
+  }
+  
+  .popup-container h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .popup-container p{
+    font-family: "Roboto-Regular",sans-serif;
+    font-size: 14px;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .popup-container input{
+    padding: .8rem;
+    border: none;
+    outline:none;
+    border-radius: 5px;
+    background-color: var(--Dark_Slate_Grey);
+    color: var(--White);
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+    transition: ease 500ms, transform 500ms;
+  }
+
+  .popup-container input:hover{
+    background: linear-gradient(90deg, #e46944, transparent) var(--Tomato);
+  }
+
+  
+  @media screen and (max-width:800px){
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    
+    main{
+      width: auto;
+      height: auto;
+    }
+    .container{
+      width: 375px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    figure{
+      content:url(../assets/images/illustration-sign-up-mobile.svg);
+      width:auto;
+      position: absolute;
+      top: 0;
+    }
+    .signup-form{
+      padding: 2rem;
+      position: absolute;
+      top: 17rem;
+    }
+    .signup-form  h1{
+      font-size: 2.5rem;
+    }
+  }
+  
+  
