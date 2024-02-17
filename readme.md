@@ -52,3 +52,13 @@ This repository is a collection of Frontendmentor Challenges solutions.
 </div> 
   <p align="center">
    <b><a href="https://agecalculator-frontendmentorchallenge.netlify.app/">Live</a></b>
+
+<hr>
+  <br>
+
+<h2 align="center">NewsLetter-SignUp</h2>
+<div align="center">
+  <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/NewsLetter-SignUp/src/assets/images/desktop-preview.jpg" width="50%" />
+</div> 
+  <p align="center">
+   <b><a href="https://newsletter-signup-frontendmentor.netlify.app/">Live</a></b>
