@@ -54,7 +54,7 @@ const SignUp = () => {
         </main>
         <section className={popup?`popup-screen popup-screen-active`:`popup-screen`}>
           <form className="popup-container">
-              <image></image>
+              <figure></figure>
               <h1>Thanks for subscribing!</h1>
               <p> A confirmation email has been sent to <b>{mail?mail:`mail@company.com`}</b>.Please open it and click the button inside to confirm your subscription.</p>
               <input type='submit' onClick={hidepopup} value={`Dismiss message`}/>

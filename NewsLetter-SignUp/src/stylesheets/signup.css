@@ -33,7 +33,7 @@
     padding: 1rem;
     border: none;
     border-radius: 1rem;
-    width: 45rem;
+    width: 52rem;
     display: flex;
     justify-content: space-evenly;
   }
@@ -46,21 +46,21 @@
   
   .signup-form h1{
     font-family: "Roboto-bold",sans-serif;
-    font-size: 3rem;
-    margin: 1.5rem 0;
+    font-size: 3.5rem;
+    margin: 2rem 0;
   }
   .signup-form p{
-    font-size: .9rem;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
   }
   
   .signup-form ul {
     font-size: 14px;
-    margin: 1rem 0;
+    margin: 2.5rem 0;
   }
   .signup-form li{
     margin: 10px 0;
-    list-style-image: url(./assets/images/icon-list.svg);
+    list-style-image: url(../assets/images/icon-list.svg);
     list-style-position: inside; 
   }
   
@@ -85,10 +85,10 @@
   }
   
   .input-container input{
-    padding:.8rem;
+    padding:1rem;
     border: 1px solid var(--Grey);
     border-radius: 5px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   
   .input-container input:focus{
@@ -99,7 +99,7 @@
   .signup-form input[type='submit']{
     cursor:pointer;
     width: 100%;
-    padding: .8rem;
+    padding: 1rem;
     border:none;
     border-radius: 5px;
     background-color: var(--Charcoal_Grey);
@@ -124,15 +124,15 @@
     border: 1px solid var(--Tomato);
   }
   
-  figure{
+  aside figure{
     content: url(../assets/images/illustration-sign-up-desktop.svg);
-    width: 20rem;
+    width: 25rem;
   }
   .popup-screen{
     position: absolute;
     top: -50rem;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: var(--Charcoal_Grey);
     z-index: 1;
     display: flex;
@@ -155,7 +155,7 @@
     z-index: 2;
   }
   
-  .popup-container image{
+  .popup-container figure{
     content: url(../assets/images/icon-success.svg);
     margin-bottom: .5rem;
     width: 3rem;
@@ -207,7 +207,8 @@
       flex-direction: column;
       position: relative;
     }
-    figure{
+    aside figure{
+      padding: 0;
       content:url(../assets/images/illustration-sign-up-mobile.svg);
       width:auto;
       position: absolute;
@@ -220,6 +221,10 @@
     }
     .signup-form  h1{
       font-size: 2.5rem;
+    }
+
+    .popup-screen{
+      height: 900px;
     }
   }
   
