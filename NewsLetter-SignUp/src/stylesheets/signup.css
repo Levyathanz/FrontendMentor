@@ -198,7 +198,8 @@
     
     main{
       width: auto;
-      height: auto;
+      height: 100vh;
+      background-color: var(--White);
     }
     .container{
       width: 375px;
@@ -225,6 +226,7 @@
 
     .popup-screen{
       height: 900px;
+      top: -100rem;
     }
   }
   
