@@ -65,3 +65,14 @@ This repository is a collection of Frontendmentor Challenges solutions.
     <p align="center">
       <b><a href="https://newsletter-signup-frontendmentor.netlify.app/">Live</a></b>
     </p>
+
+<hr>
+<br>
+
+<h2 align="center">Interactive-Rating-Component</h2>
+    <div align="center">
+       <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/Interactive-Rating-App/src/assets/desktop-preview.jpg" width="50%" />
+    </div> 
+    <p align="center">
+      <b><a href="https://interactive-rating-frontendmentor-app.netlify.app/">Live</a></b>
+    </p>
