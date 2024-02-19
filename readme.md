@@ -25,17 +25,6 @@ This repository is a collection of Frontendmentor Challenges solutions.
 <hr>
 <br>
 
-<h2 align="center">FAQs-Accordin</h2>
-    <div align="center">
-       <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/FAQs-Accordian/assets/images/desktop-preview.jpg" width="50%" />
-    </div> 
-    <p align="center">
-       <b><a href="https://faqs-accordin-frontendmentor.netlify.app/">Live</a> </b>
-    </p>
-
-<hr>
-<br>
-
 <h2 align="center">Social-Proof-Section-Master</h2>
     <div align="center">
       <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/SocialProof-section/preview-image/desktop-preview.jpg" width="50%" />
@@ -47,12 +36,23 @@ This repository is a collection of Frontendmentor Challenges solutions.
 <hr>
 <br>
 
-<h2 align="center">Age_Calculator</h2>
+<h2 align="center">FAQs-Accordin</h2>
     <div align="center">
-       <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/Age-calculator/Design/desktop-preview.jpg" width="50%" />
+       <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/FAQs-Accordian/assets/images/desktop-preview.jpg" width="50%" />
     </div> 
     <p align="center">
-       <b><a href="https://agecalculator-frontendmentorchallenge.netlify.app/">Live</a></b>
+       <b><a href="https://faqs-accordin-frontendmentor.netlify.app/">Live</a> </b>
+    </p>
+
+<hr>
+<br>
+
+<h2 align="center">Interactive-Rating-Component</h2>
+    <div align="center">
+       <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/Interactive-Rating-App/src/assets/desktop-preview.jpg" width="50%" />
+    </div> 
+    <p align="center">
+      <b><a href="https://interactive-rating-frontendmentor-app.netlify.app/">Live</a></b>
     </p>
 
 <hr>
@@ -66,13 +66,15 @@ This repository is a collection of Frontendmentor Challenges solutions.
       <b><a href="https://newsletter-signup-frontendmentor.netlify.app/">Live</a></b>
     </p>
 
+
 <hr>
 <br>
 
-<h2 align="center">Interactive-Rating-Component</h2>
+<h2 align="center">Age_Calculator</h2>
     <div align="center">
-       <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/Interactive-Rating-App/src/assets/desktop-preview.jpg" width="50%" />
+       <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/Age-calculator/Design/desktop-preview.jpg" width="50%" />
     </div> 
     <p align="center">
-      <b><a href="https://interactive-rating-frontendmentor-app.netlify.app/">Live</a></b>
+       <b><a href="https://agecalculator-frontendmentorchallenge.netlify.app/">Live</a></b>
     </p>
+
