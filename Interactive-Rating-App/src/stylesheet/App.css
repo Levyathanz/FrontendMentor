@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital@0;1&display=swap');
+
+/* font-family:"Overpass", sans-serif; */
+
+/* colors */
+
+:root{
+      --Orange: hsl(25, 97%, 53%);
+      --White: hsl(0, 0%, 100%);
+      --Light_Grey: hsl(217, 12%, 63%);
+      --Medium_Grey: hsl(215, 13%, 30%);
+      --Dark_Blue: hsl(213, 19%, 18%);
+      --Very_Dark_Blue: hsl(216, 12%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:"Overpass", sans-serif;
+    color: var(--White);
+    background-color: var(--Very_Dark_Blue);
+}
+.rating{
+    color:var(--Light_Grey);
+    background-color: var(--Medium_Grey);
+    width: 40px;
+}
+
+.rating:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.rating:focus{
+    background-color: var(--Light_Grey);
+    color: var(--White);
+}
+
+.submit{
+    width: 100%;
+    font-size: 14px;
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+.thanks-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    padding: 2rem;
+    border: none;
+    border-radius: 2rem;
+    opacity: 0;
+    top: -100%;
+    transform: translate(-50%,-50%) scale(0.5);
+    transition: opacity 300ms;
+}
+
+.thanks-card.active{
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 400ms cubic-bezier(.18,.89,.43,1.19);
+}
