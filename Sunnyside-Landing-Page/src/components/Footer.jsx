@@ -1,12 +1,12 @@
-import milkbottles from "./assets/images/desktop/image-gallery-milkbottles.jpg"
-import orange from "./assets/images/desktop/image-gallery-orange.jpg"
-import cone from "./assets/images/desktop/image-gallery-cone.jpg"
-import sugarcubes from "./assets/images/desktop/image-gallery-sugarcubes.jpg"
+import milkbottles from "../assets/images/desktop/image-gallery-milkbottles.jpg"
+import orange from "../assets/images/desktop/image-gallery-orange.jpg"
+import cone from "../assets/images/desktop/image-gallery-cone.jpg"
+import sugarcubes from "../assets/images/desktop/image-gallery-sugarcubes.jpg"
 
-import facebook from "./assets/images/icon-facebook.svg"
-import instagram from "./assets/images/icon-instagram.svg"
-import twitter from "./assets/images/icon-twitter.svg"
-import pinterest from "./assets/images/icon-pinterest.svg"
+import facebook from "../assets/images/icon-facebook.svg"
+import instagram from "../assets/images/icon-instagram.svg"
+import twitter from "../assets/images/icon-twitter.svg"
+import pinterest from "../assets/images/icon-pinterest.svg"
 const Footer = () => {
 
     const image_gallery = [

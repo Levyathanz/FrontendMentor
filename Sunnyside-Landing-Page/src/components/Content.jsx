@@ -1,8 +1,8 @@
 
 
-import iconarrow from './assets/images/icon-arrow-down.svg'
-import transform from './assets/images/desktop/image-transform.jpg';
-import standout from './assets/images/desktop/image-stand-out.jpg'
+import iconarrow from '../assets/images/icon-arrow-down.svg'
+import transform from '../assets/images/desktop/image-transform.jpg';
+import standout from '../assets/images/desktop/image-stand-out.jpg'
 
 
 const Content = () => {

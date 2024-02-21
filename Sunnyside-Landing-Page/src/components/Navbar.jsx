@@ -1,6 +1,6 @@
 import { useState } from "react"
-import hamburger from './assets/images/icon-hamburger.svg'
-import logo from "./assets/images/logo.svg"
+import hamburger from '../assets/images/icon-hamburger.svg'
+import logo from "../assets/images/logo.svg"
 
 const Navbar = () => {
 
@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav>
           <img src={logo} alt="logo" />
-          <div className={menubar?' hamburger-menubar menubar':'menubar'}>
+          <div className={menubar?'hamburger-menubar menubar':'menubar'}>
             <ul>
               <li>About</li>
               <li>Service</li>

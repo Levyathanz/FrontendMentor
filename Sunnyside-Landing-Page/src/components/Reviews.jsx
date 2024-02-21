@@ -1,6 +1,6 @@
-import emily from './assets/images/image-emily.jpg'
-import thomas from './assets/images/image-thomas.jpg'
-import jennie from './assets/images/image-jennie.jpg'
+import emily from '../assets/images/image-emily.jpg'
+import thomas from '../assets/images/image-thomas.jpg'
+import jennie from '../assets/images/image-jennie.jpg'
 
 
 const reviews =[

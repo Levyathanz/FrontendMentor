@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import './stylesheets/App.css'
-import Navbar from './Navbar';
-import Content from './Content'
-import Footer from './Footer';
-import Testimonals from './Testimonals';
+import Navbar from './components/Navbar';
+import Content from './components/Content'
+import Footer from './components/Footer';
+import Testimonals from './components/Testimonals';
 
 function App() {
 
