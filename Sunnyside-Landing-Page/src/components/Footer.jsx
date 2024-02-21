@@ -37,11 +37,11 @@ const Footer = () => {
                 <li>Service</li>
                 <li>Projects</li>
             </ul>
-            <ul>
+            <section>
             {social_medias.map((platform,i)=>{
               return <img src={platform} alt="" key={i} />
             })}
-            </ul>
+            </section>
             <p>Designed by <a href="https://github.com/Levyathanz">"@Levyathan"</a></p>
         </footer>
     </>
