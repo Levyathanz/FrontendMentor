@@ -66,7 +66,6 @@ This repository is a collection of Frontendmentor Challenges solutions.
       <b><a href="https://newsletter-signup-frontendmentor.netlify.app/">Live</a></b>
     </p>
 
-
 <hr>
 <br>
 
@@ -78,3 +77,13 @@ This repository is a collection of Frontendmentor Challenges solutions.
        <b><a href="https://agecalculator-frontendmentorchallenge.netlify.app/">Live</a></b>
     </p>
 
+<hr>
+<br>
+
+<h2 align="center">Sunnyside Landing Page</h2>
+    <div align="center">
+       <img alt="project preview" src="https://github.com/Levyathanz/FrontendMentor/blob/main/Sunnyside-Landing-Page/src/assets/images/desktop-preview.jpg" width="50%" />
+    </div> 
+    <p align="center">
+       <b><a href="https://sunnyside-landing-page-frontend.netlify.app/">Live</a></b>
+    </p>
