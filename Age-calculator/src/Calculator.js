@@ -18,7 +18,6 @@ const UserInput = () => {
 
 
   const handleInputChange = (e) => {
-    setAge({ years: '--', months: '--', days: '--' });
     const { name, value } = e.target;
     setInputError(false);
 
@@ -58,19 +57,16 @@ const UserInput = () => {
       if (ageInterval) {
         clearInterval(ageInterval);
       }
-
       calculation(currentDate);
     }
   };
 
   useEffect(() => {
-    // Cleanup the interval when the component unmounts or before setting up a new one
-    return () => {
-      if (ageInterval) {
-        clearInterval(ageInterval);
-      }
-    };
-  }, [ageInterval]);
+    setAge({ years: '--', months: '--', days: '--' });
+   
+    return ()=>clearInterval(ageInterval);
+     // eslint-disable-next-line
+  }, [day,month,year]);
 
   function calculation(currentDate) {
     let ageYears = currentDate.getFullYear() - year;
@@ -151,7 +147,8 @@ const UserInput = () => {
       <section>
         {Object.entries(age).map(([unit, value]) => (
           <p key={unit} className='result-container'>
-            <span className={`age-${unit}`}>{value}</span> <span className='result-age'>{unit}</span>
+            <span className={`age-${unit}`}>{value}</span>
+            <span className='result-age'>{unit}</span>
           </p>
         ))}
       </section>
