@@ -29,7 +29,7 @@ This repository is a collection of Frontendmentor Challenges solutions.
        <img alt="project preview" src="https://github.com/SritharanKalimuthu/FrontendMentor/blob/main/Social-links-profile/design/desktop-preview.jpg" width="50%" />
     </div> 
     <p align="center">
-       <b><a href="https://blogcardfrontendmentor.netlify.app/">Live</a> </b>
+       <b><a href="https://socialprofileslink-frontendmentor.netlify.app/">Live</a> </b>
     </p>
 
 <hr>
