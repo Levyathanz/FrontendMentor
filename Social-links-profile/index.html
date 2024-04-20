@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet -->
+  <style>
+
+  @font-face {
+      font-family: 'Inter-Variable';
+      src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype'),
+          url('assets/fonts/OFL.txt') format('woff')
+  }
+
+    :root{
+      --Green: hsl(75, 94%, 57%);
+      --White: hsl(0, 0%, 100%);
+      --Dark_Grey: hsl(0, 0%, 12%);
+      --Off_Black: hsl(0, 0%, 8%);
+      --Grey: hsl(0, 0%, 20%);
+    }
+
+    body{
+      font-family: 'Inter-Variable',sans-serif;
+      background-color: var(--Off_Black);
+      color: var(--White);
+    }
+
+    main{
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container{
+      padding: 2rem;
+      background-color: var(--Dark_Grey);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 20rem;
+      border-radius: 5px;
+    }
+
+    .container img{
+      width: 5.5rem;
+      border-radius: 50%;
+    }
+    
+    h1{
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    span{
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--Green);
+    }
+
+    p{
+      margin-top: 2rem;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    ul{
+      list-style: none;
+      padding: 0;
+    }
+
+    button{
+      width: 20rem;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      background-color: var(--Grey);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: var(--White);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    button:hover,button:focus{
+      background-color: var(--Green);
+    }
+
+    @media screen and (max-width:400px) {
+      .container{
+      padding: 1.5rem;
+      width: 18rem;
+    }
+    
+    h1{
+      font-size: 1.3rem;
+    }
+
+    p{
+      font-size: 14px;
+    }
+
+
+    button{
+      width: 17rem;
+    }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="container">
+      <img src="./assets/images/avatar-jessica.jpeg" alt=""/>
+      <h1>Jessica Randall</h1>
+      <span>London, United Kingdom</span>
+      <p>"Front-end developer and avid reader."</p>
+      <ul>
+        <button> GitHub</button>
+        <button> Frontend Mentor</button>
+        <button> LinkedIn</button>
+        <button> Twitter</button>
+        <button> Instagram</button>
+      </ul>
+    </div>
+  </main>
+ 
+</body>
+</html>
