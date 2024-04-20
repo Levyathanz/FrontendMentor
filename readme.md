@@ -9,7 +9,7 @@ This repository is a collection of Frontendmentor Challenges solutions.
        <img alt="project preview" src="https://github.com/SritharanKalimuthu/FrontendMentor/blob/main/QR-code-component/design/desktop-preview.jpg" width="50%" />
     </div> 
     <p align="center">
-       <b><a href="https://sunnyside-landing-page-frontend.netlify.app/">Live</a></b>
+       <b><a href="https://qr-component-main-frontendmentor.netlify.app/">Live</a></b>
     </p>
 
 <br>
