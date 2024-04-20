@@ -34,6 +34,16 @@ This repository is a collection of Frontendmentor Challenges solutions.
 
 <hr>
 <br>
+<h2 align="center">Recipe Page</h2>
+    <div align="center">
+       <img alt="project preview" src="https://github.com/SritharanKalimuthu/FrontendMentor/blob/main/Recipe-Page/design/desktop-preview.jpg" width="50%" />
+    </div> 
+    <p align="center">
+       <b><a href="https://recipe-page-frontendmentor-challenge.netlify.app/">Live</a> </b>
+    </p>
+
+<hr>
+<br>
 
 <h2 align="center">Testimonal_Grid_Section</h2>
     <div align="center">
